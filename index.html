@@ -11,12 +11,438 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
         crossorigin="anonymous">
 
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP|Open+Sans" rel="stylesheet">
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+        crossorigin="anonymous">
+
     <!-- css -->
     <link rel="stylesheet" href="css/style.css">
 
 </head>
 
 <body>
+
+
+    <!-- header start------------------------- -->
+
+    <header id="header">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg">
+                <a class="navbar-brand logo" href="#">
+                    <svg width="169px" height="67px" viewBox="0 0 169 67" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+                        <title>logo_hero</title>
+                        <desc>Created with Sketch.</desc>
+                        <defs>
+                            <filter x="-2.2%" y="-4.6%" width="104.5%" height="110.5%" filterUnits="objectBoundingBox"
+                                id="filter-1">
+                                <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+                                <feGaussianBlur stdDeviation="2.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+                                <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.15 0" type="matrix"
+                                    in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+                                <feMerge>
+                                    <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                                    <feMergeNode in="SourceGraphic"></feMergeNode>
+                                </feMerge>
+                            </filter>
+                        </defs>
+                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <g id="01_top_sp01" transform="translate(-103.000000, -137.000000)" fill="#FFFFFF">
+                                <g id="container_hero" filter="url(#filter-1)" transform="translate(20.000000, 142.000000)">
+                                    <g id="logo_hero" transform="translate(88.000000, 0.000000)">
+                                        <path d="M5.17657971,18.4178551 C5.13793237,19.2023961 5.12711111,19.6514783 5.0923285,20.0990145 C4.62701449,26.0793043 4.06585507,32.1021063 4.14856039,38.1055845 C4.16170048,38.9828792 3.70488889,39.6197874 3.02005797,39.8393043 C2.43957488,40.0255845 1.55377778,39.9707053 1.0923285,39.6290628 C-0.454338164,38.4858744 0.085178744,35.8215266 0.114550725,34.1774686 C0.157062802,31.8416232 0.236676329,29.5073237 0.318608696,27.1722512 C0.392811594,25.0597874 0.65484058,22.9589179 0.731362319,20.8456812 C0.811748792,18.6350531 0.867400966,16.4236522 0.991072464,14.215343 C1.14952657,11.378628 1.36595169,8.54345894 1.63802899,5.71524638 C1.76092754,4.43370048 2.37928502,3.82925604 3.31609662,3.75350725 C4.6138744,3.64915942 5.50353623,4.25824155 5.36363285,5.53205797 C5.08769082,8.06577778 6.11957488,10.1233623 7.26662802,12.2180483 C9.11474396,15.5919614 10.830686,19.0377585 12.7112657,22.3931208 C13.2360966,23.3283865 13.8505894,24.2311884 14.6645024,24.9399807 C15.3292367,25.5196908 17.0652754,26.796599 17.9711691,26.0785314 C18.6544541,25.5366957 19.1576425,24.6640386 19.6523285,23.9583382 C22.0059517,20.5983382 24.2683671,17.1749565 26.6567729,13.8396908 C27.8788019,12.1337971 29.245372,10.5222029 30.6374493,8.94925604 C32.2838261,7.09109179 33.9989952,5.2901256 35.7551304,3.53476329 C36.1508792,3.13901449 36.8256618,2.88316908 37.3968696,2.83138164 C38.3661449,2.7432657 38.8190918,3.36935266 38.8198647,4.32162319 C38.8221836,5.85978744 38.72943,7.40490821 38.844599,8.9337971 C39.0795749,12.0781449 39.4297198,15.2132174 39.7257585,18.3521546 C39.8532947,19.7148599 39.9808309,21.0775652 40.0751304,22.4433623 C40.2049855,24.3363092 40.2730048,26.2338937 40.4245024,28.1260676 C40.5798647,30.0622995 40.8102029,31.9931208 40.9941643,33.9278068 C41.0382222,34.4023961 41.0552271,34.8808502 41.0467246,35.3569855 C41.0258551,36.5295459 40.4701063,37.2754396 39.528657,37.4385314 C38.3151304,37.6487729 37.2917488,37.2166957 36.9910725,36.105971 C36.6362899,34.797372 36.4283671,33.4323478 36.3186087,32.0789179 C35.9599614,27.6182415 35.6677874,23.1521546 35.3640193,18.6876135 C35.164599,15.7620097 35.0022802,12.8209469 34.6011208,9.88838647 C32.2196715,12.382686 30.2161932,15.1946667 28.3178357,18.0653913 C26.1435362,21.3558261 23.9468213,24.6315749 21.8111691,27.9475169 C19.9885604,30.7772754 18.1435362,30.7332174 15.499285,30.3189179 C13.5352271,30.012058 11.8308792,28.8433623 10.6931014,27.1954396 C8.99261836,24.7359227 7.48150725,22.1450048 5.8923285,19.6097391 C5.70682126,19.3121546 5.53136232,19.0091594 5.17657971,18.4178551"
+                                            id="Fill-1"></path>
+                                        <path d="M126.749681,33.3122319 C126.767459,33.296 126.787556,33.282087 126.806879,33.267401 C127.25828,32.946628 127.872,33.0540676 128.418473,33.1437295 C130.738087,33.5263382 133.148908,33.3408309 135.383498,32.6080773 C136.562242,32.2208309 137.737121,31.6480773 138.493836,30.663343 C139.484754,29.3756135 139.582918,27.550686 139.031034,26.02257 C138.47915,24.4944541 137.357604,23.2314589 136.100792,22.2018937 C133.436444,20.0198647 130.049391,18.736 126.608232,18.604599 C126.24572,18.589913 125.829874,18.6107826 125.598763,18.8913623 C125.467362,19.0498164 125.424077,19.2608309 125.389295,19.4641159 C124.902338,22.2830531 125.169005,25.1537778 125.290357,27.9920386 C125.644367,36.2378357 124.804174,44.6258551 126.694029,52.6598647 C126.853256,53.3346473 127.031807,54.0187053 126.986203,54.7112657 C126.939826,55.4030531 126.622918,56.1195749 126.013836,56.4511691 C125.250164,56.8677874 124.249198,56.5446957 123.644754,55.9178357 C123.041855,55.2917488 122.752773,54.4314589 122.522435,53.5928116 C121.288039,49.0958068 121.240889,44.3700097 121.230068,39.7060483 C121.216155,32.9597681 121.260213,26.212715 121.305043,19.4664348 C121.310454,18.721314 121.315092,17.9607343 121.499053,17.2333913 C122.02543,15.1603478 125.146589,14.8797681 126.884174,14.8357101 C130.879536,14.7329082 134.896541,16.0221836 138.08572,18.430686 C140.093836,19.9464348 141.796638,21.9305894 142.695575,24.2795749 C143.594512,26.6293333 143.627749,29.3593816 142.503111,31.608657 C140.730744,35.1533913 136.45171,36.8585121 132.490357,36.7564831 C131.140019,36.7224734 129.793546,36.5153237 128.495768,36.1419903 C127.82485,35.9495266 127.129198,35.6867246 126.69944,35.1363865 C126.282821,34.6069179 126.241082,33.7358068 126.749681,33.3122319"
+                                            id="Fill-4"></path>
+                                        <path d="M87.694686,31.4372174 C87.9489855,31.7363478 88.364058,31.8468792 88.8394203,31.9535459 C93.2599034,32.9421449 96.7837681,29.5860097 100.137585,27.2671691 C101.666473,26.2090048 102.032077,24.6260097 101.610821,22.8737391 C101.089855,20.7025314 100.216425,19.6010821 97.934686,19.6374106 C96.3354589,19.6629179 95.0214493,20.4490048 93.7105314,21.2443671 C91.7039614,22.4625314 90.413913,24.3709372 89.1957488,26.2538357 C88.6655072,27.0754783 88.1344928,27.9141256 87.8137198,28.8447536 C87.6027053,29.4584734 87.3630918,30.1471691 87.4434783,30.8072657 C87.476715,31.0824348 87.5648309,31.2841739 87.694686,31.4372174 M106.684444,29.276058 C108.203285,29.4700676 109.641739,29.7328696 111.090242,29.8178937 C112.67401,29.9114203 114.269372,29.8101643 115.858551,29.8519034 C117.231304,29.8882319 118.015845,30.6588599 118.022029,31.8638841 C118.028213,32.8988599 117.015652,33.9547053 115.869372,33.9353816 C113.079807,33.8913237 110.283285,34.1858164 107.509952,33.4808889 C105.719034,33.0256232 104.313043,32.1900676 103.350725,30.6124831 C103.24715,30.4432077 103.057005,30.3272657 102.84058,30.1255266 C101.315556,31.3684251 99.8237681,32.5974106 98.3196135,33.8093913 C94.8885024,36.5742222 90.9557488,37.0843671 86.8274396,36.0748986 C84.6825121,35.5500676 83.4148792,34.0327729 83.3437681,31.6242705 C83.2386473,28.0061063 84.5441546,25.027942 86.8521739,22.4269758 C88.3138164,20.7798261 89.8512077,19.166686 91.5431884,17.7661063 C94.0297585,15.7077488 97.0983575,15.4488116 100.118261,15.923401 C102.647343,16.3191498 105.262222,18.2561546 105.022609,21.741372 C104.961546,22.6333527 105.013333,23.5338357 105.013333,24.5100676 C108.129082,25.043401 106.57314,27.268715 106.684444,29.276058"
+                                            id="Fill-7"></path>
+                                        <path d="M67.8207536,26.8131401 C68.1508019,26.363285 68.4669372,25.9605797 68.7529275,25.5385507 C71.5231691,21.4427053 75.582686,20.3458937 80.2180483,20.6380676 C81.0744734,20.691401 81.7894493,21.6629952 81.7623961,22.5572947 C81.7337971,23.5018357 80.9909952,24.2454106 79.9096425,24.3938164 C78.7641353,24.5507246 77.6023961,24.6257005 76.4738937,24.8591304 C73.6309952,25.44657 71.7473237,27.2668599 70.5175652,29.7998068 C69.8752464,31.1230918 69.3589179,32.5082126 68.7884831,33.8655072 C68.5643285,34.3980676 68.3695459,34.9437681 68.12143,35.4631884 C67.6932174,36.3598068 66.9550531,36.8846377 65.9710918,36.7601932 C65.0072271,36.6388406 64.3254879,35.9795169 64.091285,35.0419324 C63.8640386,34.1298551 63.6677101,33.1729469 63.6924444,32.2407729 C63.7751498,29.1072464 63.597372,26.0247343 62.5299324,23.0380676 C62.3776618,22.610628 62.3807536,22.0904348 62.4449082,21.6313043 C62.5693527,20.7424155 63.1699324,20.2438647 64.034087,20.1279227 C64.8634589,20.0158454 65.5111884,20.4595169 65.7925411,21.1690821 C66.5044251,22.9661836 67.1088696,24.807343 67.8207536,26.8131401"
+                                            id="Fill-9"></path>
+                                        <path d="M50.622686,29.3501063 C50.6234589,27.6032464 50.5956329,25.8556135 50.6327343,24.1102995 C50.6613333,22.8017005 51.3291594,22.0704928 52.4275169,22.2544541 C52.9021063,22.3340676 53.5111884,22.7692367 53.6897391,23.1966763 C53.9834589,23.9016039 54.069256,24.7302029 54.0808502,25.5093333 C54.1210435,28.4735845 54.1148599,31.4378357 54.0831691,34.402087 C54.0762126,34.9663382 54.0197874,35.6272077 53.7222029,36.0646957 C53.4122512,36.5199614 52.7977585,36.9922319 52.2914783,37.0223768 C51.8679034,37.0478841 51.2487729,36.5338744 51.0045217,36.0971594 C50.7154396,35.580058 50.6543768,34.8913623 50.637372,34.2730048 C50.5909952,32.6328116 50.6211401,30.9910725 50.622686,29.3501063"
+                                            id="Fill-11"></path>
+                                        <path d="M149.736502,18.9009469 C149.12742,17.750029 150.043362,16.5473237 150.951575,15.9297391 C152.861527,14.6319614 154.684908,13.2089662 156.586357,11.8972754 C157.818435,11.0485797 158.524135,11.2781449 159.161043,12.4514783 C159.665778,13.3813333 159.215923,14.0066473 158.564329,14.4889662 C156.497469,16.019401 154.369546,17.4679034 152.298821,18.9937005 C151.60858,19.5022995 150.239691,19.8524444 149.736502,18.9009469"
+                                            id="Fill-13"></path>
+                                        <path d="M58.1294686,14.6165797 C58.1565217,15.0996715 57.8999034,15.5989952 57.3974879,15.8107826 C56.7002899,16.1045024 55.91343,15.6979324 55.2803865,15.4188986 C54.5499517,15.0965797 53.8156522,14.7819903 53.091401,14.4442126 C51.6405797,13.7671111 50.2237681,12.9841159 49.0396135,11.892715 C48.7428019,11.6190918 48.291401,11.3385121 48.2141063,10.9087536 C47.9505314,9.44942995 49.7824155,9.50199034 50.676715,9.62025121 C51.9876329,9.79416425 53.2498551,10.278029 54.4015459,10.9164831 C55.2811594,11.4034396 56.1082126,12.0009275 56.8185507,12.7159034 C57.2398068,13.1394783 57.6912077,13.5831498 57.9849275,14.1095266 C58.0722705,14.2664348 58.1194203,14.4403478 58.1294686,14.6165797"
+                                            id="Fill-16"></path>
+                                        <path d="M144.756174,1.33835749 C144.814145,1.72096618 144.752309,2.13758454 144.587671,2.52560386 C143.932986,4.06995169 143.299942,5.62666667 142.573372,7.13777778 C142.102647,8.1163285 141.298783,8.41855072 140.525063,8.08077295 C139.752116,7.74222222 139.36487,6.77681159 139.728928,5.83072464 C140.331053,4.2647343 140.958686,2.70647343 141.661295,1.18454106 C142.034628,0.376038647 142.780522,-0.223768116 143.681005,0.0807729469 C144.33028,0.300289855 144.67115,0.783381643 144.756174,1.33835749"
+                                            id="Fill-18"></path>
+                                        <path d="M151.583614,2.85928502 C151.683324,2.96981643 151.760618,3.10585507 151.808541,3.27358454 C152.033469,4.07744928 151.595208,5.0691401 151.149217,5.71996135 C150.435787,6.76034783 149.863807,7.89580676 149.176657,8.95474396 C148.661101,9.74778744 147.553469,10.0252754 146.809121,9.6333913 C146.061681,9.23996135 145.835208,8.44305314 146.362357,7.4181256 C147.108251,5.96885024 147.926029,4.55281159 148.790184,3.17155556 C149.099362,2.67686957 149.546126,2.40015459 150.133565,2.40479227 C150.642164,2.408657 151.241971,2.48208696 151.583614,2.85928502"
+                                            id="Fill-21"></path>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse nav-list" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">About</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Feature</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Log in</a>
+                        </li>
+                        <li>
+                            <a href="#" class="primary-btn">
+                                Sign up
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- header end------------------------- -->
+
+
+    <!-- intro start------------------------- -->
+
+    <div class="intro">
+        <div class="container">
+            <div class="intro-title">
+                <h1>
+                    Spread <span>smiles</span>
+                    <br>
+                    by innovating property
+                </h1>
+            </div>
+            <div class="row justify-content-between">
+                <div class="col-md-6 text-center">
+                    <img src="img/iphone-mock1.png" alt="" class="img-fluid mock-shadow">
+                </div>
+                <div class="col-md-6 intro-text">
+                    <h4>投資マンション<br>運用サポートアプリケーション</h4>
+                    <p>マンション投資は契約してからが不動産投資の本当のスタートです。<br>あなたの計画的な資産運用をサポートします。</p>
+                    <a href="#" class="primary-btn">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- intro end------------------------- -->
+
+
+    <!-- about start------------------------- -->
+
+    <div class="about section-gap-pb">
+        <div class="container">
+            <div class="row align-items-center justify-content-betweenr">
+                <div class="col-md-5 about-text">
+                    <h1>About App</h1>
+                    <p>お持ちの不動産に関するローンや収支の状況をいつでも確認できるほか、現在の不動産市場における売却価格の査定も瞬時に行えます。
+                        <br><br>
+                        当社で購入して頂いた物件管理はもちろん、他社でご購入いただいた不動産情報でもご登録いただけます。各種シュミレーションや売却査定、収支向上のためのコンサルティングや保障制度など質の高いサポートを受けていただくことができます。
+                        チャットでの質問を受け付けていますので、日々の不測の出来事にも迅速に対応できます。
+                    </p>
+                    <a href="#" class="primary-btn">
+                        Get Started
+                    </a>
+                </div>
+                <div class="col-md-7 text-center">
+                    <img src="img/iphone-mock2.png" alt="" class="img-fluid mock-shadow-lg">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- about end------------------------- -->
+
+
+    <!-- explain start------------------------- -->
+
+    <div class="explain section-gap">
+        <div class="container">
+            <div class="row justify-content-between explain-content align-item-center">
+                <div class="col-md-6">
+                    <img src="img/device-mock.png" alt="" class="explain-img mock-shadow-lg">
+                </div>
+                <div class="col-md-6 explain-text">
+                    <h1>どこでも不動産管理</h1>
+
+                    <p>どのデバイスでもあなたの不動産情報を確認することができます。
+                        「あれ？ローンって今どれくらい払い終わってる？」「今の収支が知りたいな」
+                        <br><br>
+                        Mirapでは、あなたの不動産に関するローンや収支の状況をいつでも確認でき、現在の不動産市場における売却価格の査定も瞬時に行えます。不動産の資産管理における不安や疑問が解消され、安心して”自信を持って”資産形成していただけます。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- explain end------------------------- -->
+
+
+    <!-- banner start------------------------- -->
+
+    <div class="banner">
+        <div class="overlay">
+            <div class="container section-gap-md">
+                <h3>Mirapは<span>無料</span>で<span>今すぐ</span>ご利用できます</h3>
+                <p>試しにあなたの物件を<span>AI</span>に査定させてみませんか？
+                    <br>
+                    <span>3分</span>であなたの物件が売り時か買い時かわかりますよ</p>
+                <a href="#" class="primary-btn">Get Started</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- banner end------------------------- -->
+
+
+    <!-- Feature start------------------------- -->
+
+    <div class="features section-gap">
+        <div class="container">
+            <h1 class="text-center">mirapの機能</h1>
+
+            <div class="row justify-content-between align-item-center section-gap-pt-md flex-row-reverse">
+                <div class="col-md-6 align-self-center features-text features-text-reverse">
+                    <h2>AI価格査定</h2>
+                    <p>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
+                        "There is no one who loves pain itself, who seeks after it and wants to have it, simply because
+                        it is pain..."
+                        <br>
+                        What is Lorem Ipsum?
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                        of type and scrambled it to make a type specimen book. </p>
+                </div>
+                <div class="col-md-6">
+                    <img src="img/iphone-mock3.png" alt="" class="img-fluid mock-shadow">
+                </div>
+            </div>
+
+            <div class="row justify-content-between align-item-center section-gap-pt-md">
+                <div class="col-md-6 align-self-center features-text">
+                    <h2>タイムライン機能</h2>
+                    <p>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
+                        "There is no one who loves pain itself, who seeks after it and wants to have it, simply because
+                        it is pain..."
+                        <br>
+                        What is Lorem Ipsum?
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                        of type and scrambled it to make a type specimen book. </p>
+                </div>
+                <div class="col-md-6">
+                    <img src="img/ipad-mock.png" alt="" class="img-fluid mock-shadow">
+                </div>
+            </div>
+
+            <div class="row justify-content-between feature-content align-item-center section-gap-pt">
+                <div class="col-md-6">
+                    <img src="img/device-mock2.png" alt="" class="feature-img mock-shadow">
+                </div>
+                <div class="col-md-6 features-text align-self-center">
+                    <h2>どこでも不動産管理</h2>
+                    <p>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci
+                        velit..."
+                        "There is no one who loves pain itself, who seeks after it and wants to have it, simply
+                        because
+                        it is pain..."
+                        <br>
+                        What is Lorem Ipsum?
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                        been
+                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                        galley
+                        of type and scrambled it to make a type specimen book. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Feature end------------------------- -->
+
+
+    <!-- other features start------------------------- -->
+
+    <div class="other-fea section-gap-md">
+        <div class="container">
+            <h1 class="text-center">その他の機能</h1>
+            <div class="other-fea-contents">
+                <div class="row justify-content-between align-item-center">
+                    <div class="col-lg-4 other-fea-item">
+                        <div class="row justify-content-between align-item-center">
+                            <div class="other-fea-icon col-3">
+                                <img src="img/feature-icon1.svg" alt="" class="img-fluid">
+                            </div>
+                            <div class="other-fea-text col-9">
+                                <h6>保有物件の管理</h6>
+                                <span>There are many variations of passages of Lorem Ipsum available, but the majority
+                                    have suffered alteration in some form, by injected humour, or randomised words
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 other-fea-item">
+                        <div class="row justify-content-between align-item-center">
+                            <div class="other-fea-icon col-3">
+                                <img src="img/feature-icon2.svg" alt="" class="img-fluid">
+                            </div>
+                            <div class="other-fea-text col-9">
+                                <h6>ポートフォリオ</h6>
+                                <span>There are many variations of passages of Lorem Ipsum available, but the majority
+                                    have suffered alteration in some form, by injected humour, or randomised words
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 other-fea-item">
+                        <div class="row justify-content-between align-item-center">
+                            <div class="other-fea-icon col-3">
+                                <img src="img/feature-icon3.svg" alt="" class="img-fluid">
+                            </div>
+                            <div class="other-fea-text col-9">
+                                <h6>ライフプランシート</h6>
+                                <span>There are many variations of passages of Lorem Ipsum available, but the majority
+                                    have suffered alteration in some form, by injected humour, or randomised words
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 other-fea-item">
+                        <div class="row justify-content-between align-item-center">
+                            <div class="other-fea-icon col-3">
+                                <img src="img/feature-icon4.svg" alt="" class="img-fluid">
+                            </div>
+                            <div class="other-fea-text col-9">
+                                <h6>保険情報の見直し</h6>
+                                <span>There are many variations of passages of Lorem Ipsum available, but the majority
+                                    have suffered alteration in some form, by injected humour, or randomised words
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 other-fea-item">
+                        <div class="row justify-content-between align-item-center">
+                            <div class="other-fea-icon col-3">
+                                <img src="img/feature-icon5.svg" alt="" class="img-fluid">
+                            </div>
+                            <div class="other-fea-text col-9">
+                                <h6>金融情報の見直し</h6>
+                                <span>There are many variations of passages of Lorem Ipsum available, but the majority
+                                    have suffered alteration in some form, by injected humour, or randomised words
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 other-fea-item">
+                        <div class="row justify-content-between align-item-center">
+                            <div class="other-fea-icon col-3">
+                                <img src="img/feature-icon6.svg" alt="" class="img-fluid">
+                            </div>
+                            <div class="other-fea-text col-9">
+                                <h6>ポイント機能</h6>
+                                <span>There are many variations of passages of Lorem Ipsum available, but the majority
+                                    have suffered alteration in some form, by injected humour, or randomised words
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- other features end------------------------- -->
+
+
+
+    <!-- get started start------------------------- -->
+
+    <div class="getstart section-gap">
+        <div class="container">
+            <div class="row justify-content-between align-item-center">
+                <div class="col-md-7">
+                    <img src="img/device-mock3.png" alt="" class="img-fluid">
+                </div>
+                <div class="col-md-5 align-self-center ">
+                    <h1>Get Started</h1>
+                    <p>Mirapは今すぐ無料でご利用できます。<br>
+                        これはテキストです。これはテキストです。これはテキストで
+                        す。これはテキストです。これはテキストです。これはテキス
+                        トです。これはテキストです。</p>
+                    <a href="#" class="primary-btn">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- get start start------------------------- -->
+
+
+    <!-- footer start------------------------- -->
+
+    <footer class="section-gap-pt-md">
+        <div class="container">
+            <div class="row justify-content-between align-item-center footer-contents">
+                <div class=" col-lg-5 corporate-content">
+                    <img src="img/si-logo.svg" alt="" class="img-fluid">
+                    <div class="sns-content d-flex">
+                        <h6>Follow Us</h6>
+                        <a href="#" class="social-btn-dissolve">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-btn-dissolve">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-2 corporate-info">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="#">Mirap</a></li>
+                        <li><a href="#">Sure's salon</a></li>
+                        <li><a href="#">Seminar</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 corporate-info">
+                    <h3>Supports</h3>
+                    <ul>
+                        <li><a href="#">Company</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Buisiness</a></li>
+                        <li><a href="#">Career</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 corporate-info ">
+                    <h3>Infomation</h3>
+                    <ul>
+                        <li>
+                            <i class="fas fa-envelope"></i>info@sure-i.co.jp
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>06-6136-3952
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright text-center">
+                <p>Copyright&copy;2019 <span>SURE INNOVATION</span> All right reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- footer end------------------------- -->
 
     <!-- bootstrap javascript-->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
