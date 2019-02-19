@@ -162,8 +162,11 @@ li {
   z-index: 100; }
   #header .navbar {
     padding: 1rem 0; }
-    #header .navbar .logo svg g g {
-      fill: #fff; }
+    #header .navbar .logo svg {
+      height: 80%;
+      width: 80%; }
+      #header .navbar .logo svg g g {
+        fill: #fff; }
     #header .navbar .navbar-toggler {
       display: none; }
     #header .navbar .nav-list ul {
@@ -225,6 +228,10 @@ li {
   #header .navbar .logo svg {
     height: 50%;
     width: 50%; } }
+@media (max-height: 800px) {
+  #header .navbar .logo svg {
+    height: 70%;
+    width: 70%; } }
 .intro {
   background-image: url("../img/mirap-bg-img.png");
   height: -webkit-fill-available;
@@ -333,6 +340,12 @@ li {
     width: 80%; }
   .intro .intro-text {
     padding: 50px 15px; } }
+@media (max-height: 900px) {
+  .intro .intro-img img {
+    height: 90%; } }
+@media (max-height: 800px) {
+  .intro .intro-img img {
+    height: 75%; } }
 .about .about-text h1 {
   margin-bottom: 3rem; }
 .about .about-text p {
@@ -347,6 +360,9 @@ li {
 @media (max-width: 450px) {
   .about img {
     width: 80%; } }
+@media (max-height: 900px) {
+  .about img {
+    width: 65%; } }
 .explain {
   background-color: rgba(240, 240, 240, 0.5); }
   .explain .explain-content {
@@ -402,6 +418,10 @@ li {
 @media (max-width: 450px) {
   .explain .explain-content .explain-text h1 {
     font-size: 35px; } }
+@media (max-height: 800px) {
+  .explain .explain-content .explain-img {
+    height: 85%;
+    margin-left: -110%; } }
 .banner {
   background-image: url(../img/banner-img.jpg);
   background-size: cover;
@@ -659,9 +679,6 @@ footer {
 .sa.show {
   opacity: 1;
   transform: none; }
-
-.sa--rl {
-  transform: translate(100px, 0); }
 
 .sa--lr {
   transform: translate(-100px, 0); }
