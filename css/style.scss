@@ -441,11 +441,15 @@ li {
 
     .intro-img {
         text-align: center;
+
+        img {
+            width: 60%;
+        }
     }
 
     .intro-text {
         position: absolute;
-        bottom: 10%;
+        bottom: 5%;
         right: 0;
 
         h4 {
@@ -483,6 +487,12 @@ li {
         .intro-title {
             h1 {
                 font-size: 100px;
+            }
+        }
+
+        .intro-img {
+            img {
+                width: 50%;
             }
         }
     }
@@ -565,8 +575,6 @@ li {
 
 @media(max-width:575px) {
     .intro {
-        margin-bottom: 900px;
-
         .intro-title {
             padding-top: 0;
 
@@ -599,26 +607,6 @@ li {
     }
 }
 
-@media(max-height:900px) {
-    .intro {
-        .intro-img {
-            img {
-                height: 90%;
-            }
-        }
-    }
-}
-
-@media(max-height:800px) {
-    .intro {
-        .intro-img {
-            img {
-                height: 75%;
-            }
-        }
-    }
-}
-
 // intro
 
 
@@ -628,6 +616,10 @@ li {
 // about
 
 .about {
+    img {
+        width: 60%;
+    }
+
     .about-text {
         h1 {
             margin-bottom: 3rem;
@@ -640,6 +632,13 @@ li {
     }
 }
 
+@media(max-width:1499px) {
+    .about {
+        img {
+            width: 50%;
+        }
+    }
+}
 
 @media(max-width:767px) {
     .about {
@@ -660,16 +659,22 @@ li {
         img {
             width: 80%;
         }
-    }
-}
 
-@media(max-height:900px) {
-    .about {
-        img {
-            width: 65%;
+        .about-text {
+            p {
+                width: 100%;
+            }
         }
     }
 }
+
+// @media(max-height:900px) {
+//     .about {
+//         img {
+//             width: 65%;
+//         }
+//     }
+// }
 
 
 // about
@@ -688,7 +693,8 @@ li {
         position: relative;
 
         .explain-img {
-            margin-left: -70%;
+            height: 85%;
+            margin-left: -50%;
             -webkit-transition: all 0.3s ease 0s;
             -moz-transition: all 0.3s ease 0s;
             -o-transition: all 0.3s ease 0s;
@@ -799,18 +805,6 @@ li {
     }
 }
 
-@media(max-height:800px) {
-    .explain {
-        .explain-content {
-            .explain-img {
-                height: 85%;
-                margin-left: -110%;
-                
-            }
-        }
-    }
-}
-
 // explain
 
 
@@ -910,6 +904,7 @@ li {
         -moz-transition: all 0.3s ease 0s;
         -o-transition: all 0.3s ease 0s;
         transition: all 0.3s ease 0s;
+        width: 70%;
     }
 
     .feature-content {
@@ -917,6 +912,7 @@ li {
         position: relative;
 
         .feature-img {
+            width: auto;
             margin-left: -70%;
         }
     }
@@ -924,8 +920,13 @@ li {
 
 @media(max-width:1499px) {
     .features {
+        .feature-img {
+            width: 60%;
+        }
+
         .feature-content {
             .feature-img {
+                width: 60%;
                 margin-left: -100%;
             }
         }
